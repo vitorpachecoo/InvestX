@@ -1,0 +1,162 @@
+/* Estilo geral */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6fa;
+    color: #333;
+}
+  
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #1e1e2f;
+  color: #fff;
+  padding: 20px;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #333;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+  
+  /* Cards */
+  .card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card-header {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  /* Transações recentes */
+  .transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .transaction:last-child {
+    border-bottom: none;
+  }
+  
+  .transaction span {
+    font-size: 16px;
+  }
+  
+  /* Formulário de transação */
+  #transaction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #transaction-form input,
+  #transaction-form select,
+  #transaction-form button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  #transaction-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #transaction-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Transações modernas */
+  .transactions-page {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transactions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .transactions-header h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .transaction-list {
+    margin-top: 20px;
+  }
+  
+  .transaction-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  
+  .transaction-item:last-child {
+    border-bottom: none;
+  }
+  
+  .transaction-item span {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .transaction-item .transaction-amount {
+    font-weight: 600;
+    color: #007bff;
+  }
+  

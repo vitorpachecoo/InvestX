@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestX</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="sidebar">
+            <h2 class="logo">InvestX</h2>
+            <ul>
+                <li><a href="principal.html">Dashboard</a></li>
+                <li><a href="transactions.html">Transações</a></li>
+                <li><a href="investimentos.html">Investimentos</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="dashboard" class="card-cartao">
+                <div class="card-header">
+                    <h2>Meus cartões</h2>
+                </div>
+                <div class="number-card">
+                    <p><strong>Card:</strong> **** **** **** 7852</p>
+                    <p><strong>Name:</strong> Vitor Pacheco</p>
+                </div>
+            </section>
+
+            <section id="saldo" class="card-saldo">
+                <div class="card-header">
+                    <h5 class="saldo-header">Seu Saldo</h5>
+                </div>
+                <p class="valor-em-conta"><strong>$620.20</strong></p>
+                <p>Moeda</p>
+                <p>USD/UAH</p>
+
+            </section>
+
+            <section id="transactions" class="card">
+                <div class="card-header">Transferências recentes</div>
+                <div class="transaction">
+                    <span>Roupas</span>
+                    <span>R$ 300</span>
+                </div>
+                <div class="transaction">
+                    <span>Alimentação</span>
+                    <span>R$ 45</span>
+                </div>
+                <div class="transaction">
+                    <span>Academia</span>
+                    <span>R$ 125</span>
+                </div>
+            </section>
+
+            <section id="purchase" class="card">
+                <form id="transaction-form">
+                    <h3>Transferência rápida</h3>
+                    <img class="quick-transfer-pessoa" src="img/quick-pessoa1.jpg" alt="">
+                    <img class="quick-transfer-pessoa" src="img/quick-pessoa2.jpg" alt="">
+                    <img class="quick-transfer-pessoa" src="img/quick-pessoa3.jpg" alt="">
+                    <img class="quick-transfer-pessoa" src="img/quick-pessoa4.jpg" alt="">
+                    <img class="quick-transfer-pessoa" src="img/quick-pessoa5.jpg" alt="">
+                    <img class="quick-transfer-pessoa" src="img/quick-pessoa6.jpg" alt="">
+                </form>
+            </section>
+
+            <section id="purchase" class="card">
+                <form id="transaction-form">
+                    <select id="transaction-type">
+                        <option value="transferido">Transferir</option>
+                        <option value="purchase">Comprar</option>
+                        <option value="sale">Vender</option>
+                    </select>
+                    <input type="text" id="recipient" placeholder="Destinatário" />
+                    <input type="number" id="amount" placeholder="Valor" />
+                    <button type="button" class="btn" onclick="makeTransaction()">Concluir</button>
+                </form>
+            </section>
+
+
+
+        </main>
+
+        <!-- Gráfico posicionado no lado direito -->
+        <aside class="right-panel">
+            <section id="summary" class="card">
+                <div class="card-header">Resumo do mês</div>
+                <canvas id="summaryChart"></canvas>
+            </section>
+
+            <!-- Gráfico de progresso em formato de rosca -->
+            <section id="progress-chart" class="card">
+                <div class="card-header">Progresso Overview</div>
+                <canvas id="progressDoughnut"></canvas>
+            </section>
+        </aside>
+
+    </div>
+
+    <!-- Modal de Sucesso -->
+    <div id="successModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Transação Concluída!</h2>
+            <p>Sua transação foi realizada com sucesso.</p>
+            <button class="btn" onclick="closeModal()">Fechar</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
