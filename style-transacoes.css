@@ -9,7 +9,31 @@ body {
   
 .container {
   display: flex;
-  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.container-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-avatar p {
+  font-weight: bold;
+}
+
+.titulo-cargo {
+  font-size: 12px;
+  color: #aeaeae;
+  margin-top: -15px;
+}
+
+.avatar {
+  width: 8dvh;
+  height: 8dvh;
+  border-radius: 100%;
+
 }
 
 .sidebar {

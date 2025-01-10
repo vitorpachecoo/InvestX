@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,16 @@
   <link rel="stylesheet" href="style-transacoes.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <div class="container">
     <nav class="sidebar">
-      <h2 class="logo">InvestX</h2>
+
+      <div class="container-avatar">
+        <img class="avatar" src="img/perfil-avatar.jpg" alt="">
+        <p>Vitor Pacheco</p>
+        <p class="titulo-cargo">Administrador</p>
+      </div>
       <ul>
         <li><a href="principal.html">Dashboard</a></li>
         <li><a href="transactions.html" class="active">Transações</a></li>
@@ -23,11 +30,12 @@
         <div class="card-header">Todas as Transações</div>
         <div class="transaction-list">
           <!-- Lista de transações será renderizada aqui -->
-        </div>        
+        </div>
       </section>
     </main>
   </div>
 
   <script src="transactions.js"></script>
 </body>
+
 </html>
